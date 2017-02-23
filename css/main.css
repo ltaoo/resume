@@ -1,22 +1,64 @@
+body, section {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: #f7f8f9;
+    background-color: rgb(40, 48, 49);
+    /* background-color: #f7f8f9; */
     font-family: '微软雅黑';
 }
 
+
 section {
     padding: 20px 40px;
+    background-color: #fff;
 }
-.title {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin-top: 0;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    /* font-weight: bold; */
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(0, 172, 119);
+}
+h4 {
     font-size: 16px;
+    margin-bottom: 8px;
+    color: rgb(40, 48, 49);
+}
+p {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+/* 调整 icon 的样式 */
+.icon {
+    margin-right: 10px;
+}
+/* 板块标题 */
+.title {
+    font-size: 18px;
     font-weight: normal;
     color: inherit;
     margin-top: 10px;
 }
 #container {
-    border-radius: 10px;
-    width: 980px;
-    margin: 20px auto;
-    background-color: #fff;
+    /* 大容器的背景色 */
+    /* background-color: rgb(40, 48, 49); */
+    /* border-radius: 10px; */
+    /* width: 980px; */
+    /* margin: 20px auto; */
     /* 文本颜色 */
     color: #212529;
     /* 阴影 */
@@ -25,22 +67,75 @@ section {
 }
 /* 内容区 */
 .content {
-    margin-left: 50px;
 }
 /* 个人信息 */
 .info {
-    background-color: #212529;
     color: #fff;
     font-size: 14px;
+    float: left;
+    width: 200px;
+    background-color: rgb(40, 48, 49);
 }
 .info__name {
-    font-size: 18px;
+    font-size: 24px;
 }
 .info .title {
     /* color: #fff; */
 }
-
-/* 调整 icon 的样式 */
-.icon {
-    margin-right: 10px;
+/* 工作经历 */
+.pro {
+    margin-left: 280px;
+}
+.project__items, .project__item {
+    list-style: none;
+    padding: 0;
+}
+.project__item {
+    padding-left: 20px;
+    position: relative;
+}
+/* 圆点 */
+.project__item::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(101, 156, 174);
+    /* background-color: rgb(141, 166, 173); */
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    left: 0;
+}
+/* 竖线 */
+.project__item::after {
+    display: block;
+    content: "";
+    width: 2px;
+    position: absolute;
+    top: 24px;
+    left: 4px;
+    right: 20px;
+    bottom: 0;
+    background-color: #ccc;
+}
+/* 工作职位 */
+.project__job {
+    display: inline-block;
+    margin-right: 20px;
+    color: rgb(101, 156, 174);
+}
+/* 工作时间 */
+.project__time {
+    display: inline-block;
+    color: rgb(101, 156, 174);
+}
+/* 自我评价 */
+.introduce {
+    margin-left: 280px;
+}
+/* 其他 */
+.other {
+    margin-left: 280px;
 }

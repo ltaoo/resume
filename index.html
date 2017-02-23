@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <!-- 阿里图标字体 -->
     <link rel="stylesheet" href="./css/iconfont.css">
+    <!-- 主样式 -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -14,43 +15,95 @@
             <h2 class="title"><i class="icon iconfont">&#xe726;</i>个人信息</h2>
             <div class="content">
                 <p class="info__name">李涛</p>
-                <p class="info__school"><i class="icon iconfont">&#xe705;</i>湖南科技大学 - 电子商务 - 本科</p>
+                <p class="info__school"><i class="icon iconfont">&#xe705;</i>湖南科技大学<br>电子商务本科</p>
                 <p class="info__tel"><i class="icon iconfont">&#xe72a;</i>138-2213-6046</p>
                 <p class="info__email"><i class="icon iconfont">&#xe69f;</i>litaowork@aliyun.com</p>
             </div>
         </section>
         <section class="pro">
-            <h2 class="title"><i class="icon iconfont">&#xe6a2</i>项目经历</h2>
-            <ul class="project_items">
-                <li class="project">
+            <h2 class="title"><i class="icon iconfont">&#xe6a2;</i>工作经历</h2>
+            <ul class="project__items">
+                <li class="project__item">
                     <h3 class="project__company">深圳联友科技有限公司</h3>
-                    <p class="project__job">web 前端开发</p>
-                    <time class="project__time">2016-3 ~ 至今</time>
-                    <p class="project__des">使用 React-Naitve 开发 “东风日产车主之家” App，该 App 已经上架 apple store。
-正式参加工作，了解了公司内部开发流程以及如何团队合作。主要工作为根据 UI 实现静态页面，包括移动端与 PC 端。后参与“东风日产车主之家”项目，对 react 以及 es6 等 JavaScript 方面的知识有了深入了解，同时对原生应用以及移动端应用开发有了基本的认识。</p>
+                    <p class="project__job"><i class="icon iconfont">&#xe715;</i>web 前端开发</p>
+                    <time class="project__time"><i class="icon iconfont">&#xe6bf;</i>2016-3 ~ 至今</time>
+                    <h4>东风日产车主之家 App</h4>
+                    <ul>
+                        <li>
+                            <p>学习 React-Native</p>
+                        </li>
+                        <li>
+                            <p>根据需求进行迭代</p>
+                        </li>
+                        <li>
+                            <p>使用 rn + redux + es6 完成 iOS 与 Android 两端并上线</p>
+                        </li>
+                    </ul>
+                    <h4>东风日产经销商门户网站</h4>
+                    <ul>
+                        <li>
+                            <p>在项目中使用 sass 进行样式编写</p>
+                        </li>
+                        <li>
+                            <p>引入 gulp 对前端资源进行自动化处理</p>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project__item">
                     <h3 class="project__company">长沙惠学信息科技有限公司</h3>
-                    <p class="project__des">
-                    一个图书管理、借阅和销售的网站，后端使用 php 提供 api，前端使用 vue 作为前端框架。个人独立完成，获得校级优秀毕业设计。
-                    该项目源于大学时期的一次创业经历，大二时以设计的身份加入了同样是大学生的创业团队，主要产品为线上书城，后来由于唯一的开发毕业离校，我开始了自学编程的道路。线上商城是基于 ecshop 二次修改，所以主要学习 php 与前端，但因为经营不善后改为线下图书借阅 + 线上商城，线下借阅初期使用手工记录借阅记录实在繁琐，于是我基于 vb 开发出单机版图书管理系统，后重构为 web 版，也就是该毕业设计的前身。
-                    </p>
+                    <p class="project__job"><i class="icon iconfont">&#xe715;</i>技术合伙人</p>
+                    <time class="project__time"><i class="icon iconfont">&#xe6bf;</i>2015 ~ 2016</time>
+                    <h4>惠学官网</h4>
+                    <ul>
+                        <li>
+                            <p>官网设计与开发</p>
+                        </li>
+                    </ul>
+                    <h4>惠学线下体验店</h4>
+                    <ul>
+                        <li>
+                            <p>使用 vb 开发图书管理系统</p>
+                        </li>
+                        <li>
+                            <p>使用 vue + php 对图书管理系统进行重构</p>
+                        </li>
+                    </ul>
+                    <h4>惠学网上书城</h4>
+                    <ul>
+                        <li>
+                            <p>设计网站广告 banner</p>
+                        </li>
+                        <li>
+                            <p>对网站样式进行优化</p>
+                        </li>
+                    </ul>
                 </li>
                 </li>
                 <li class="project__item">
                     <h3 class="project__company">芒果生活（湖南）电子商务有限责任公司</h3>
-                    <p class="project__job">实习产品</p>
-                    <time class="project__time">2015-7 ~ 2015-9</time>
-                    <p class="project__des">暑期实习，参与了“马栏山试吃会”、“芒果汽车开幕式”、“试吃会社区” 等原型制作与需求文档的编写。
-经历此次实习，不仅学习到 Axure 软件的操作，并且对产品经理的工作有了更为直观的了解，一款产品从需求到上线过程经过了哪些流程，如何与设计、开发交流沟通等。让自己也能够从产品的角度思考自己的工作，拓宽了视野。</p>
+                    <p class="project__job"><i class="icon iconfont">&#xe715;</i>暑期产品实习</p>
+                    <time class="project__time"><i class="icon iconfont">&#xe6bf;</i>2015-7 ~ 2015-9</time>
+                    <h4>马栏山试吃会</h4>
+                    <ul>
+                        <li>
+                            <p>学习 Axure</p>
+                        </li>
+                        <li>
+                            <p>活动页面原型制作与需求文档的编写</p>
+                        </li>
+                    </ul>
+                    <h4>试吃会社区</h4>
+                    <ul>
+                        <li>
+                            <p>产品原型制作与需求文档的编写</p>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
-        <section id="intruction">
+        <section class="introduce">
             <h2 class="title"><i class="icon iconfont">&#xe69b;</i>自我评价</h2>
-        </section>
-        <section id="other">
-            <h2 class="title"><i class="icon iconfont">&#xe6f7;</i>项目</h2>
+            <p>努力学习的好青年。</p>
         </section>
     </div>
 </body>
