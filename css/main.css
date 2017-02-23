@@ -7,7 +7,9 @@ body {
     /* background-color: #f7f8f9; */
     font-family: '微软雅黑';
 }
-
+hr {
+    margin-bottom: 20px;
+}
 
 section {
     padding: 20px 40px;
@@ -41,8 +43,27 @@ p {
     margin-top: 0;
     margin-bottom: 6px;
     font-size: 16px;
+    /* color: rgb(88, 88, 88); */
+}
+/* a 链接样式 */
+/* 一个链接 */
+a:link {
+    color: #fff;
+}
+/* 已经访问过的 */
+a:visited {
+    color: #fff;
+}
+/* 鼠标悬停 */
+a:hover {
+}
+/* 活动 */
+a:active {
 }
 /* 调整 icon 的样式 */
+/* a .iconfont { */
+    /* text-decoration: none; */
+/* } */
 .icon {
     margin-right: 10px;
 }
@@ -78,9 +99,20 @@ p {
 }
 .info__name {
     font-size: 24px;
+    text-align: center;
 }
 .info .title {
     /* color: #fff; */
+}
+.info__email {
+    margin-bottom: 20px;
+}
+.info__blog {
+    margin-bottom: 20px;
+}
+.info__qr {
+    /* width: 200px; */
+    width: 100%;
 }
 /* 工作经历 */
 .pro {
