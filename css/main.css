@@ -171,3 +171,24 @@ a:active {
 .other {
     margin-left: 280px;
 }
+/* 响应式设计之 手机样式 */
+@media (max-width: 767px) {
+    section {
+        padding: 10px;
+    }
+    .info {
+        /* float: initial; */
+        float: unset;
+        width: unset;
+        overflow: hidden;
+    }
+    .info__blog, .info__email {
+        margin-bottom: unset;
+    }
+    .info__qr {
+        display: none;
+    }
+    .pro, .introduce {
+        margin-left: 0;
+    }
+}
