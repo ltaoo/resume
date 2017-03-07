@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body, section {
     margin: 0;
     padding: 0;
@@ -12,7 +15,7 @@ hr {
 }
 
 section {
-    padding: 20px 40px;
+    padding: 5px 20px;
     background-color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -83,7 +86,7 @@ a:active {
     /* 文本颜色 */
     color: #212529;
     /* 阴影 */
-    box-shadow: 2px 2px 15px #ccc;
+    /* box-shadow: 2px 2px 15px #ccc; */
     overflow: hidden;
 }
 /* 内容区 */
@@ -94,7 +97,7 @@ a:active {
     color: #fff;
     font-size: 14px;
     float: left;
-    width: 200px;
+    width: 240px;
     background-color: rgb(40, 48, 49);
 }
 .info__name {
@@ -105,18 +108,17 @@ a:active {
     /* color: #fff; */
 }
 .info__email {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .info__blog {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .info__qr {
-    /* width: 200px; */
     width: 100%;
 }
 /* 工作经历 */
 .pro {
-    margin-left: 280px;
+    margin-left: 240px;
 }
 .project__items, .project__item {
     list-style: none;
@@ -125,6 +127,12 @@ a:active {
 .project__item {
     padding-left: 20px;
     position: relative;
+}
+.project__description {
+    text-indent: 30px;
+}
+.project__name {
+    color: rgb(0, 172, 119);
 }
 /* 圆点 */
 .project__item::before {
@@ -163,32 +171,46 @@ a:active {
     display: inline-block;
     color: rgb(101, 156, 174);
 }
+/* 一个链接 */
+.github__url:link {
+    color: #000;
+}
+/* 已经访问过的 */
+.github__url:visited {
+    color: #000;
+}
 /* 自我评价 */
 .introduce {
-    margin-left: 280px;
+    margin-left: 240px;
 }
 /* 其他 */
 .other {
-    margin-left: 280px;
+    margin-left: 240px;
 }
 /* 响应式设计之 手机样式 */
-@media (max-width: 767px) {
-    section {
-        padding: 10px;
-    }
-    .info {
-        /* float: initial; */
-        float: unset;
-        width: unset;
-        overflow: hidden;
-    }
-    .info__blog, .info__email {
-        margin-bottom: unset;
-    }
+/* @media (max-width: 767px) { */
+    /* section { */
+    /*     padding: 10px; */
+    /* } */
+    /* .info { */
+    /*     [> float: initial; <] */
+    /*     float: unset; */
+    /*     width: unset; */
+    /*     overflow: hidden; */
+    /* } */
+    /* .info__blog, .info__email { */
+    /*     margin-bottom: unset; */
+    /* } */
+    /* .info__qr { */
+    /*     display: none; */
+    /* } */
+    /* .pro, .introduce { */
+    /*     margin-left: 0; */
+    /* } */
+/* } */
+/* 非打印时隐藏二维码 */
+@media not print {
     .info__qr {
         display: none;
-    }
-    .pro, .introduce {
-        margin-left: 0;
     }
 }
