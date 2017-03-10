@@ -40,10 +40,13 @@
                                 该项目目的是给东风日产车主提供便捷的线上预约服务以及信息查询功能，以及配合行车记录仪进行视频、照片的展示功能。
                             </p>
                             <p class="project__description">
-                                项目上个版本使用 Hybird 开发模式，在项目重构为 React-Native 时参与该项目。负责客户端部分代码的编写，包括通用组件的封装与业务逻辑。同时在项目开发过程中向其他同事分享关于 RN 的优缺点以及基础入门。
+                                项目上个版本使用 Hybird 开发模式，在项目重构为 React-Native 时参与该项目。负责客户端部分代码的编写，包括通用组件的封装与业务逻辑。
                             </p>
                             <p class="project__description">
                                 在使用 React-Native 开发后，页面跳转、列表滑动以及数据加载相比 Hybird 模式在用户体验上更为接近原生应用。使用 redux 作为状态管理方案，使得整体数据便于维护。</p>
+                            <p class="project__description">
+                                app store 地址：<i class="icon iconfont icon-link"></i><a class="github__url" href="https://itunes.apple.com/us/app/%25E4%25B8%259C%25E9%25A3%258E%25E6%2597%25A5%25E4%25BA%25A7%25E8%25BD%25A6%25E4%25B8%25BB%25E4%25B9%258B%25E5%25AE%25B6/id1170980931?l=zh&ls=1&mt=8">东风日产车主之家</a>
+                            </p>
                         <!-- </li> -->
                         <!-- <li> -->
                             <h4 class="project__name">东风日产经销商门户网站</h4>
@@ -54,7 +57,7 @@
                                 项目使用 jQuery + bootstrap 实现前端部分；不过使用了 bootstrap 的 sass 版源码，根据需求引入所需组件；并且部门第一个采用了 gulp 用以前端资源自动化处理的项目。
                             </p>
                             <p class="project__description">
-                                使用了 gulp 与 sass 后，从组件化的角度编写 css 代码，解决了纯 css 难以维护的问题。同时也方便了项目完成后的代码压缩工作。
+                                使用了 gulp 与 sass 后，从组件化的角度编写 css 代码，解决了之前使用纯 css 难以维护的问题。同时也方便了项目完成后的代码压缩工作。
                             </p>
                         <!-- </li> -->
                     <!-- </ul> -->
@@ -64,11 +67,11 @@
                     <p class="project__job"><i class="icon iconfont">&#xe715;</i>联合创始人</p>
                     <time class="project__time"><i class="icon iconfont">&#xe6bf;</i>2014 ~ 2016-03</time>
                     <h4 class="project__name">惠学线下体验店</h4>
-                    <p class="project__description">
-                        用来给线下书店进行书籍管理与借阅记录管理，将 vb + access 单机版重构为 web 端。
+                    <p class = "project__description">
+                        该项目是因为在线下书店管理借阅记录与会员信息时，使用手记非常麻烦且不方便于是产生了第一版 vb + access。由于是单机版无法共享数据，所以重构为 web 版。新版本在操作上较旧版本更为方便，尤其增加了从豆瓣 api 查询书籍信息后书籍录入非常简单。
                     </p>
                     <p class="project__description">
-                        前端使用 vue 作为前端框架，使用 vue-router 进行路由管理，bootstrap 作为 UI 框架，vue-resource 请求后端提供的 api。后端使用 php + mysql，部署在 ubuntu 系统。独立完成了该系统所有的工作，包括需求确认到系统部署上线。
+                        前端使用 vue 作为前端框架，使用 vue-router 进行路由管理，element-ui 作为组件库。后端使用 php + mysql，部署在 ubuntu 系统。
                     </p>
                     <p class="project__description">
                         我的毕业设计在该系统的基础上增加购买功能、用户登录功能等，并将借阅、二手图书、新书联系在一起，实现“以最低的成本看最新的书”，获得校级优秀毕业设计。
@@ -86,10 +89,27 @@
                 </li>
             </ul>
         </section>
-        <!-- <section class="introduce"> -->
-            <!-- <h2 class="title"><i class="icon iconfont">&#xe69b;</i>自我评价</h2> -->
-            <!-- <p>想要开发出自己喜欢使用的产品，并为之努力。</p> -->
-        <!-- </section> -->
+        <section class="introduce">
+            <h2 class="title"><i class="icon iconfont">&#xe6c0;</i>项目</h2>
+            <ul>
+                <li>
+                    <h3>lookbanner</h3>
+                    <p>该项目用来采集电商网站首页 banner。起源于在给学弟培训设计时，需要搜集大量实际素材作为例子。手动访问网站并右键保存非常麻烦，于是萌生出了自动化处理的念头。该项目部署在服务器上，使用 nodejs 每隔 5 分钟采集一次指定的电商网站，并将数据保存在 sqlite 数据库中，使用 koa 提供接口，前端使用 vue 作为前端框架，实现了无限滚动与瀑布流。暂时只能简单的查看 banner。</p>
+                    github 地址: <a href="https://github.com/ltaoo/lookbannerServer">https://github.com/ltaoo/lookbannerServer</a>
+                    线上地址: <a href="http://139.129.17.174:3000">http://139.129.17.174:3000</a>
+                </li>
+                <li>
+                    <h3>CNote</h3>
+                    <p>该项目是一个配合印象笔记使用的命令行笔记应用。在本地写好 markdown 笔记后，使用命令即可将渲染好的笔记同步至印象笔记。使用 nodejs 实现。</p>
+                    github 地址: <a href="https://github.com/ltaoo/CNote">https://github.com/ltaoo/CNote</a>
+                </li>
+            </ul>
+        </section>
+        <section class="introduce">
+            <h2 class="title"><i class="icon iconfont">&#xe69b;</i>自我描述</h2>
+            <p>熟悉 html、css 以及 JavaScript，能够快速根据设计稿进行页面实现。同时也了解 vue、react 等前端框架，有实际项目经验。对于 gulp 和 webpack 也能够根据实际要求实现所需功能，可以使用 nodejs 实现自己需要的工具。</p>
+            <p>关注前端行业，在学习新东西的同时也加强基础知识理解的深度，一直保持着学习、分享的心态。</p>
+        </section>
     </div>
 </body>
 </html>

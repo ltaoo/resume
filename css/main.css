@@ -51,19 +51,19 @@ p {
 /* a 链接样式 */
 /* 一个链接 */
 a:link {
-    color: #fff;
+    color: #000;
 }
-/* 已经访问过的 */
+/*已经访问过的 */
 a:visited {
-    color: #fff;
+    color: #000;
 }
-/* 鼠标悬停 */
-a:hover {
+/* 鼠标悬停 
+/*a:hover {
 }
-/* 活动 */
-a:active {
+*//* 活动 */
+/*a:active {
 }
-/* 调整 icon 的样式 */
+*//* 调整 icon 的样式 */
 /* a .iconfont { */
     /* text-decoration: none; */
 /* } */
@@ -99,6 +99,12 @@ a:active {
     float: left;
     width: 240px;
     background-color: rgb(40, 48, 49);
+}
+.info a:link {
+    color: #fff;
+}
+.info a:visited {
+    color: #fff;
 }
 .info__name {
     font-size: 24px;
@@ -209,8 +215,8 @@ a:active {
     /* } */
 /* } */
 /* 非打印时隐藏二维码 */
-@media not print {
+/* @media not print { */
     .info__qr {
         display: none;
     }
-}
+/* } */
