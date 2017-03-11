@@ -15,16 +15,23 @@
         <section class="info">
             <!-- <h2 class="title"><i class="icon iconfont">&#xe726;</i>个人信息</h2> -->
             <div class="content">
-                <p class="info__name">李涛</p>
-                <hr>
-                <p class="info__school"><i class="icon iconfont">&#xe705;</i>湖南科技大学<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012-9 ~ 2016-6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本科 - 电子商务</p>
-                <p class="info__tel"><i class="icon iconfont">&#xe72a;</i>138-2213-6046</p>
-                <p class="info__email"><i class="icon iconfont">&#xe69f;</i>litaowork@aliyun.com</p>
-                <img class="info__qr" src="./img/blog.png" alt="ltaoo's web" title="ltaoo's web">
-                <p class="info__blog"><a href="https://ltaoo.github.io"><i class="icon iconfont">&#xe65b;</i>https://ltaoo.github.io/</a></p>
-                <img class="info__qr" src="./img/github.png" alt="ltaoo's github" title="github">
-                <p class="info__github"><a href="https://github.com/ltaoo"><i class="icon iconfont">&#xe761;</i><span>https://github.com/ltaoo</span></a></p>
+                <p class="info__name"><span>李涛</span></p>
+                <div class = "info__detail">
+                    <p class="info__school"><i class="icon iconfont">&#xe705;</i>湖南科技大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012-9 ~ 2016-6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本科 - 电子商务</p>
+                    <p class="info__tel"><i class="icon iconfont">&#xe72a;</i>138-2213-6046</p>
+                    <p class="info__email"><i class="icon iconfont">&#xe69f;</i>litaowork@aliyun.com</p>
+                    <img class="info__qr" src="./img/blog.png" alt="ltaoo's web" title="ltaoo's web">
+                    <p class="info__blog">博&nbsp;&nbsp;&nbsp;客: <a href="https://ltaoo.github.io"><i class="icon iconfont">&#xe65b;</i>https://ltaoo.github.io/</a></p>
+                    <img class="info__qr" src="./img/github.png" alt="ltaoo's github" title="github">
+                    <p class="info__github">github: <a href="https://github.com/ltaoo"><i class="icon iconfont">&#xe761;</i><span>https://github.com/ltaoo</span></a></p>
+                </div>
             </div>
+        </section>
+        <section class="introduce">
+            <h2 class="title"><i class="icon iconfont">&#xe69b;</i>自我描述</h2>
+            <ul>
+            <li><p>熟悉 HTML、CSS 以及 JavaScript，能够快速根据设计稿进行页面实现。了解前端主流开发工具，在 vue、react 等前端框架上有实际项目经验。对于 gulp 和 webpack 能够根据实际要求实现所需功能，也可以使用 nodejs 实现自己需要的工具。</p></li>
+            <li><p>关注前端行业，在学习新东西的同时也加强基础知识理解的深度，一直保持着学习、分享的心态。有独立开发项目经验，了解产品从需求到部署的流程，一直希望能够开发出自己喜欢使用的产品。</p></li>
         </section>
         <section class="pro">
             <h2 class="title"><i class="icon iconfont">&#xe6a2;</i>工作经历</h2>
@@ -95,20 +102,20 @@
                 <li>
                     <h3>lookbanner</h3>
                     <p>该项目用来采集电商网站首页 banner。起源于在给学弟培训设计时，需要搜集大量实际素材作为例子。手动访问网站并右键保存非常麻烦，于是萌生出了自动化处理的念头。该项目部署在服务器上，使用 nodejs 每隔 5 分钟采集一次指定的电商网站，并将数据保存在 sqlite 数据库中，使用 koa 提供接口，前端使用 vue 作为前端框架，实现了无限滚动与瀑布流。暂时只能简单的查看 banner。</p>
-                    github 地址: <a href="https://github.com/ltaoo/lookbannerServer">https://github.com/ltaoo/lookbannerServer</a>
-                    线上地址: <a href="http://139.129.17.174:3000">http://139.129.17.174:3000</a>
+                    <p>github 地址: <i class="icon iconfont icon-link"></i><a href="https://github.com/ltaoo/lookbannerServer">https://github.com/ltaoo/lookbannerServer</a></p>
+                    <p>线上地址: <i class="icon iconfont icon-link"></i><a href="http://139.129.17.174:3000">http://139.129.17.174:3000</a></p>
                 </li>
                 <li>
                     <h3>CNote</h3>
                     <p>该项目是一个配合印象笔记使用的命令行笔记应用。在本地写好 markdown 笔记后，使用命令即可将渲染好的笔记同步至印象笔记。使用 nodejs 实现。</p>
-                    github 地址: <a href="https://github.com/ltaoo/CNote">https://github.com/ltaoo/CNote</a>
+                    <p>github 地址: <i class="icon iconfont icon-link"></i><a href="https://github.com/ltaoo/CNote">https://github.com/ltaoo/CNote</a></p>
+                </li>
+                <li>
+                    <h3>CNote</h3>
+                    <p>electron 开发的笔记客户端，因为市面上大部分笔记应用不支持 vim 编辑模式，所以使用 codemirror + electron 实现了一个简单的笔记客户端便于自己使用。</p>
+                    <p>github 地址: <i class="icon iconfont icon-link"></i><a href="https://github.com/ltaoo/marknote">https://github.com/ltaoo/marknote</a></p>
                 </li>
             </ul>
-        </section>
-        <section class="introduce">
-            <h2 class="title"><i class="icon iconfont">&#xe69b;</i>自我描述</h2>
-            <p>熟悉 html、css 以及 JavaScript，能够快速根据设计稿进行页面实现。同时也了解 vue、react 等前端框架，有实际项目经验。对于 gulp 和 webpack 也能够根据实际要求实现所需功能，可以使用 nodejs 实现自己需要的工具。</p>
-            <p>关注前端行业，在学习新东西的同时也加强基础知识理解的深度，一直保持着学习、分享的心态。</p>
         </section>
     </div>
 </body>
